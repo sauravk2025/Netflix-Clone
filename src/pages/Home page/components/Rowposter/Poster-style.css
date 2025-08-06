@@ -1,0 +1,52 @@
+.row
+{
+    margin-left: 20px;
+    color: white;
+    margin-top: 27px;
+}
+
+.posters
+{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.posters::-webkit-scrollbar
+{
+    display: none;
+}
+
+.moviename
+{
+text-align: center;
+}
+.imagelist
+{
+    max-height: 168px;
+    max-width: 299px;
+    margin-right: 20px;
+    border-radius: 3px;
+    border:2px solid black ;
+    transition: border-color 0.3s ease;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.smallImageList
+{
+    max-height: 125px;
+    max-width: 299px;
+    margin-right: 20px;
+    border:2px solid black ;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.imagelist:hover, .smallImageList:hover {
+    border: 2px solid white; 
+    filter: brightness(70%);
+}

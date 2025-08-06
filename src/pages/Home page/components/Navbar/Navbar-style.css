@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+.navbar
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color:rgba(0, 0, 0, 0); 
+    top:0;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+
+}
+
+
+.netflix-logo
+{
+    position: relative;
+    left: 20px;
+    width:80px;
+    cursor: pointer;
+}
+
+.avatar-logo
+{
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.navbar-tags
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    
+}
+
+.navbar-elements
+{
+    margin-left: 20px;
+    color:rgb(192,192,192);
+    text-decoration: none;
+    font-family: 'Netflix Font', sans-serif;
+    font-weight: 550;
+    font-size:medium;
+    
+
+    
+}
+
+.navbar-tags a::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 1s;
+}
+
+.navbar-tags a:hover
+{
+    color: red;
+}
+.navbar-tags a:hover::after
+{
+    color: red;
+    width:100%;
+}
+
+.search-icon {
+    position: fixed;
+    right: 70px; /* Adjust the right position as needed */
+    width: 25px; /* Adjust the width as needed */
+    cursor:pointer;
+  }
