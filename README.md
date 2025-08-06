@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# 🎬 Netflix Clone using React & TMDB API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and dynamic Netflix-inspired movie streaming app built with **React JS**. It uses the **TMDB (The Movie Database) API** to fetch real-time movie data such as trending, top-rated, and genre-based content. The UI replicates Netflix's homepage with a focus on sleek design and smooth interactions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
 
-## Expanding the ESLint configuration
+- Browse trending, top-rated, and popular movies
+- Dynamic banner featuring a random movie
+- Horizontal scrollable rows for categories
+- Movie previews via poster clicks
+- Netflix-like dark theme and animations
+- Fully responsive for mobile and desktop
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- **Frontend**: React JS, CSS, Axios
+- **API**: [TMDB API](https://www.themoviedb.org/documentation/api)
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/netflix-clone.git
+cd netflix-clone
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Install Dependencies
+
+npm install
+
+## Add Your TMDB API Key
+
+Create a .env file in the root directory and add:
+REACT_APP_TMDB_API_KEY=your_api_key_here
+You can get a free API key by signing up at TMDB.
+
+## Run the App
+
+npm start
+The app will run on http://localhost:3000.
